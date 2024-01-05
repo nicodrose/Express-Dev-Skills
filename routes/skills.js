@@ -13,5 +13,8 @@ router.get('/', skillsCtrl.index);
 router.get('/new', skillsCtrl.new);
 // GET /skills/:id (our show action/functionality, to display or show a single skill)
 router.get('/:id', skillsCtrl.show);
+// POST /skills
+router.post('/', skillsCtrl.create);
+
 
 module.exports = router;
